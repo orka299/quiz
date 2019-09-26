@@ -1,5 +1,10 @@
-var startbtn = document.getElementById("startbtn");
+let start = document.getElementById("startbtn");
 
-startbtn.onclick = function(){
-    button.innerHTML ="s";
+start.onclick = function(){
+    console.log("hello world");
+
 }
+
+
+let loops = document.getElementsById("UserNumber");
+
