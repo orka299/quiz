@@ -20,18 +20,16 @@
     height: 100ox;
 }
  </style>   
-</body>
-</html>
+
+<div id ="startpage">
 <div id ="table">
 <h1>Quizkampen 2019</h1>
 <hr>
-<p id ="question">placeholder</p>
-<p id=""></p>
 
 <form>
     <p> Andvändarnamn </p>
 
-     <input type="text">
+     <input type="text" id ="Andvändarnamn">
 <br>
 <br>
    <p> hur många gånger vill du köra </p>
@@ -40,9 +38,28 @@
 
 <br>
 <br />
-
-<button type="submit" id ="startbtn"> Start </button>
-
-
-<script src ="quiz.JS"
+<button type="submit" id ="startbtn" onclick ="startquiz"> Start</button>
 </div>
+</div>
+
+<div id ="question"></div>
+<div id="AllaVal">
+  <div class ="val" id ="A"
+  onClick="CheckAnswer('A')"></div>
+  <div class ="val" id ="B"
+  onClick="CheckAnswer('B')"></div>
+  <div class ="val" id ="C"
+  onClick="CheckAnswer('C')"></div>
+  <div class ="val" id ="D"
+  onClick="CheckAnswer('D')"></div>
+  </div>
+<div id ="counter"></div>
+<div id ="score" ></div>
+
+
+
+
+
+<script src ="quiz.JS"></script>
+</body>
+</html>
