@@ -1,27 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
- <style>
-#table{
- background-color: red;
- border:4px solid black;
- width: 1340px;
- height: 600px;
- color:white;
- text-align: center;
-}
-#startbtn{
-    height: 100ox;
-}
- </style>   
 
-<div id ="startpage">
+<body>
+
+
+    <!-- <div id ="startpage">
 <div id ="table">
 <h1>Quizkampen 2019</h1>
 <hr>
@@ -55,11 +45,25 @@
   </div>
 <div id ="counter"></div>
 <div id ="score" ></div>
+-->
+    <div class="container">
+        <h1>Quiz</h1>
+        <div id="frågor"></div>
+        <br>
+
+        <div><input type="radio" id="ValA" span id ="opt1"></div>
+        <div><input type="radio" id="ValB" span id ="opt2"></div>
+        <div><input type="radio" id="ValC" span id ="opt3"></div>
+        <div><input type="radio" id="ValD" span id ="opt4"></div>
+        <button onclick="checkAnswer()">Nästa</button>
+    </div>
 
 
 
 
 
-<script src ="quiz.JS"></script>
+    <script src="quiz.JS"></script>
+    <script src="JsonQuestions.JS"></script>
 </body>
+
 </html>
